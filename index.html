@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>UBET.KZ - Забрать 5000₸</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1249699600223095'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1249699600223095&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -134,6 +153,14 @@
             margin: 30px 0;
         }
     </style>
+    
+    <script>
+    function trackLead() {
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'Lead');
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -145,7 +172,7 @@
         <h1>ЗАБРАТЬ БОНУС</h1>
         <p class="subtitle">Получи фрибет и начни выигрывать с UBET.KZ</p>
         
-        <a href="https://click.ubtracks.com/6zn8gNjd?landing=292" class="button">ЗАБРАТЬ ФРИБЕТ</a>
+        <a href="https://click.ubtracks.com/6zn8gNjd?landing=292" class="button" onclick="trackLead()">ЗАБРАТЬ ФРИБЕТ</a>
         
         <p class="note">Нажимая кнопку, вы переходите на официальный сайт UBET.KZ</p>
         
